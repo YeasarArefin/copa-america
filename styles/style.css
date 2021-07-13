@@ -1,0 +1,120 @@
+/* common styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --regular-text:16px;
+    --card-text: 28px;
+    --top-bg:#2D25A0;
+    --btn-bg:#E02C6D;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+/* menubar style */
+
+#nav-bar{
+    background-color: var(--top-bg);
+    padding-bottom: 60px;
+}
+
+.menu-bar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items li{
+    list-style: none;
+    padding: 0 20px;
+    font-size: var(--regular-text);
+}
+
+.menu-items a{
+    text-decoration: none;
+    color:white;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.login-btn button{
+    padding:8px 30px;
+    font-size: var(--regular-text);
+    background-color: var(--btn-bg);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.login-btn button i{
+    margin-right: 15px;
+}
+
+/* home section styles */
+
+#home{
+    background-color: var(--top-bg);
+    padding-bottom: 80px;
+}
+
+.home-section{
+    display: flex;
+}
+
+.home-heading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-heading h1{
+    color: white;
+    font-size: 4em;
+    margin-bottom: 20px;
+
+}
+
+.home-heading button{
+    padding:8px 15px;
+    font-size: var(--regular-text);
+    background-color: var(--btn-bg);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+    width: 145px;
+}
+
+.home-heading i{
+    margin-left: 10px;
+}
+
+.home-image{
+    width: 50%;
+}
+
+.home-image img{
+    width: 100%;
+}
