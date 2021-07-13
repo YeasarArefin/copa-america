@@ -12,6 +12,7 @@
     --top-bg:#2D25A0;
     --btn-bg:#E02C6D;
     --card-text-color:#6C6C6C;
+    --text-color:#0A0826;
 }
 
 .container{
@@ -162,9 +163,173 @@
 
 .player-info h1{
     font-size: var(--card-text);
+    color: var(--text-color);
 }
 
 .player-info p{
     color: var(--card-text-color);
     font-size: var(--regular-text);
+}
+
+/* grand finale style */
+
+#grand-fainal{
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.fainal-text{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 60px;
+    color: var(--text-color);
+    background: -webkit-linear-gradient(#0b83ff, #97ffbc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag{
+    width: 40%;
+    height: 300px;
+}
+
+.vs{
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.flag img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 40px grey;
+}
+
+/* wining section */
+
+#argentina-wins {
+    margin-bottom: 150px;
+}
+
+.win{
+    display: flex;
+}
+
+.wining-video{
+    width: 50%;
+}
+
+.wining-video iframe{
+    width: 100%;
+}
+
+.wining-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wining-text h1{
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    text-align: right;
+}
+
+.wining-text p{
+    margin-bottom: 25px;
+    width: 404px;
+    color: var(--card-text-color);
+    text-align: right;
+}
+
+/* highlight section styles */
+
+#highlight-section{
+    margin-top: 100px;
+}
+
+.highlights{
+    display: flex;
+}
+
+.highlight-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlight-text h1{
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.highlight-text p{
+    margin-bottom: 25px;
+    width: 404px;
+    color: var(--card-text-color);
+}
+
+.highlight-text i{
+    margin-left: 10px;
+}
+
+.highlight-img{
+    width: 50%;
+}
+
+.highlight-img img{
+    width: 100%;
+}
+
+/* copyright section style */
+
+#copyright-section{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.football-img{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.football-img img{
+    width: 100%;
+}
+
+.social-icons{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.icons{
+    background-color: #80808040;
+    color: #969BAB;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.copyright-text h3{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
 }
