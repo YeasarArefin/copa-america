@@ -1,4 +1,6 @@
-/* common styles */
+/* ----------
+common styles
+------------- */
 
 *{
     margin: 0;
@@ -20,7 +22,9 @@
     margin: auto;
 }
 
-/* menubar style */
+/*-----------
+menubar style
+-----------*/
 
 #nav-bar{
     background-color: var(--top-bg);
@@ -182,10 +186,7 @@
     text-align: center;
     font-size: 2em;
     margin-bottom: 60px;
-    color: var(--text-color);
-    background: -webkit-linear-gradient(#0b83ff, #97ffbc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--top-bg);
 }
 
 .flags{
@@ -203,6 +204,7 @@
     font-size: 3em;
     font-weight: 700;
     font-style: italic;
+    color: var(--top-bg);
 }
 
 .flag img{
@@ -334,7 +336,10 @@
     font-weight: 500;
 }
 
+/* header animation */
+
 @keyframes up-down {
+
     100%{
         transform: translateX(60%);
         
@@ -346,10 +351,19 @@
 }
 
 #home{
-    transition-delay: transform 100s;
+    animation-delay: 25s;
 }
 
-@media screen and (max-width:688px) {
+/* mobile responsive */
+
+@media screen and (max-width:689px) {
+
+    @keyframes up-down {
+        100%{
+            transform: translateX(0%);
+
+        }
+    }
 
     .container{
         width: 100%;
@@ -382,7 +396,6 @@
     }
     
     button.watch-btn {
-        /* margin: auto; */
         margin-bottom: 50px;
     }
     
@@ -398,7 +411,7 @@
     
     .flag {
         width: 80%;
-        height: 200px;
+        height: auto;
     }
 
     .win {
@@ -406,7 +419,9 @@
     }
     
     .wining-video {
-        width: 100%;
+        order: 2;
+        width: 85%;
+        margin: auto;
     }
     
     .wining-text {
@@ -444,15 +459,135 @@
         margin: auto;
     }
 
-    .copyright {
-    }
-    
     .social-icons {
         width: 200px;
     }
     
     footer#copyright-section {
         margin-top: 80px;
+    }
+
+}
+
+/* table responsive */
+
+@media only screen and (min-width:690px) and (max-width:1024px)  {
+    
+    @keyframes up-down {
+        100%{
+            transform: translateX(0%);
+        }
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .menu {
+        width: 65%;
+    }
+    
+    .menu-items li {
+        padding: 0px 20px;
+    }
+    
+    .login-btn {
+        width: 35%;
+        justify-content: center;
+    }
+
+
+    .home-heading {
+        width: 40%;
+    }
+    
+    .home-image {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .home-section {
+        justify-content: center;
+    }
+
+    ul.menu-items {
+        justify-content: space-evenly;
+    }
+
+    .players {
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    
+    article.player {
+        width: 300px;
+        height: 450px;
+        margin: auto;
+    }
+
+    .flags {
+        flex-direction: column;
+    }
+    
+    .flag {
+        width: 70%;
+        height: auto;
+    }
+
+    .win {
+        flex-direction: column;
+    }
+    
+    .wining-video {
+        width: 75%;
+        margin: auto;
+        order: 2;
+        margin-top: 50px;
+    }
+    
+    .wining-text {
+        width: 80%;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .wining-text h1 {
+        text-align: center;
+    }
+    
+    .wining-text p {
+        text-align: center;
+        width: 80%;
+    }
+
+    #argentina-wins {
+        margin-bottom: 80px;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+    
+    .highlight-text {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    
+    .highlight-text p {
+        width: 80%;
+        text-align: left;
+    }
+    
+    .highlight-img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .social-icons {
+        width: 30%;
     }
 
 }
