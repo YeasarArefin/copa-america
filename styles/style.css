@@ -83,7 +83,9 @@ menubar style
     margin-right: 15px;
 }
 
-/* home section styles */
+/*----------------- 
+home section styles
+-----------------*/
 
 #home{
     background-color: var(--top-bg);
@@ -137,7 +139,9 @@ menubar style
     width: 100%;
 }
 
-/* player section styles */
+/*-------------------
+player section styles
+-------------------*/
 
 #player-section{
     margin-top: 80px;
@@ -175,7 +179,9 @@ menubar style
     font-size: var(--regular-text);
 }
 
-/* grand finale style */
+/*-----------------
+ grand finale style
+ ----------------*/
 
 #grand-fainal{
     margin-top: 80px;
@@ -213,7 +219,9 @@ menubar style
     box-shadow: 10px 10px 40px grey;
 }
 
-/* wining section */
+/*-------------
+ wining section
+ ------------*/
 
 #argentina-wins {
     margin-bottom: 150px;
@@ -253,7 +261,9 @@ menubar style
     text-align: right;
 }
 
-/* highlight section styles */
+/*----------------------
+highlight section styles
+----------------------*/
 
 #highlight-section{
     margin-top: 100px;
@@ -294,7 +304,9 @@ menubar style
     width: 100%;
 }
 
-/* copyright section style */
+/*---------------------
+copyright section style
+---------------------*/
 
 #copyright-section{
     margin-top: 100px;
@@ -328,6 +340,10 @@ menubar style
     color: #969BAB;
     padding: 5px 10px;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .copyright-text h3{
@@ -336,14 +352,19 @@ menubar style
     font-weight: 500;
 }
 
-/* header animation */
+/*--------------
+header animation
+--------------*/
 
 @keyframes up-down {
 
     100%{
         transform: translateX(60%);
-        
-    }
+        -webkit-transform: translateX(60%);
+        -moz-transform: translateX(60%);
+        -ms-transform: translateX(60%);
+        -o-transform: translateX(60%);
+}
 }
 
 #home:hover img{
@@ -354,7 +375,9 @@ menubar style
     animation-delay: 25s;
 }
 
-/* mobile responsive */
+/*----------------
+ mobile responsive
+ ---------------*/
 
 @media screen and (max-width:689px) {
 
@@ -469,9 +492,11 @@ menubar style
 
 }
 
-/* table responsive */
+/*--------------
+table responsive
+--------------*/
 
-@media only screen and (min-width:690px) and (max-width:1024px)  {
+@media only screen and (min-width:690px) and (max-width:1156px)  {
     
     @keyframes up-down {
         100%{
